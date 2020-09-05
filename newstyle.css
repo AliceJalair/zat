@@ -1,0 +1,726 @@
+@font-face {
+  font-family: "yasasisa";
+
+  src: url("yasasisa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "nishiki";
+
+  src: url("nishiki-teki.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "guzuri";
+  src: url("guzuri_1nensei.ttf") format("truetype");
+}
+
+body {
+  max-width: 100%;
+  background: url(1x/bgimg.png) center / cover;
+  background-repeat: no-repeat;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.inner {
+  width: 77%;
+  margin: 0 auto;
+}
+
+.mv {
+  position: relative;
+  display: flex;
+}
+
+.global-nav {
+  margin: 20px;
+
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+
+.nav-list {
+  color: #2e5077ff;
+  font-family: "guzuri";
+  font-size: 25px;
+}
+
+.nav-list-item {
+  padding-left: 20px;
+  transition: 0.3s;
+}
+
+.nav-list-item:hover {
+  border-bottom: 5px solid #f9d81dff;
+  transition: 0.3s;
+}
+
+.logo-img {
+  width: 60%;
+  margin: 130px auto 50px auto;
+}
+
+.logo-mini {
+  position: absolute;
+  left: 140px;
+  top: 100px;
+  font-family: "nishiki";
+  font-size: 80px;
+  color: #444;
+}
+
+.scroll-img img {
+  width: 100px;
+}
+
+.scroll-img {
+  transition-duration: 0.5s;
+}
+
+.scroll-img:hover img {
+  transform: translateY(20px);
+  transition-duration: 0.5s;
+  transition: 0.5s;
+}
+
+.scroll-txt {
+  color: #2e5077ff;
+  font-size: 20px;
+  font-family: "yasashisa";
+  margin-bottom: 10px;
+}
+
+.scroll-wrap {
+  text-align: center;
+}
+
+.top {
+  content: url(1x/top.png);
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 40%;
+}
+.right {
+  content: url(1x/right.png);
+  position: absolute;
+  right: 0;
+  top: 70px;
+  width: 7%;
+}
+.bottom-right {
+  content: url(1x/bottom-right.png);
+  position: absolute;
+  right: 0;
+  top: 640px;
+  width: 40%;
+}
+.bottom-left {
+  content: url(1x/bottom-left.png);
+  position: absolute;
+  top: 650px;
+  left: 10px;
+  width: 40%;
+}
+.left {
+  content: url(1x/left.png);
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  width: 4%;
+}
+
+.about {
+  margin: 70px 0;
+  text-align: center;
+}
+
+.title {
+  width: 550px;
+  margin: auto;
+  padding: 50px 0 50px 0;
+}
+
+.mark {
+  width: 120px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.about-txt {
+  font-family: "yasasisa";
+  color: #2e5077ff;
+  font-size: 20px;
+  line-height: 2.4;
+  text-align: center;
+}
+
+.activities {
+  padding: 20px;
+}
+
+.activities .title {
+  width: 350px;
+}
+
+.actv-img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.activities .flex {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  padding: 30px;
+}
+
+.activity-item {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.more {
+  font-family: "yasasisa";
+  color: #f9d81dff;
+  background: #2e5077ff;
+
+  width: 240px;
+  height: 245px;
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 3;
+}
+
+.more-p {
+  margin: 110px 0;
+}
+
+.activity-item:hover .more {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* .first-line-wrap .activity-item {
+  width: 30%;
+} */
+
+.thumb-item {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.thumb-item img {
+  width: 100%;
+}
+
+.thumb-item-nav {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.thumb-item-nav img {
+  width: 100%;
+}
+
+.thumb-item-nav .slick-current {
+  opacity: 0.6;
+}
+
+.members {
+  text-align: center;
+  padding-top: 90px;
+}
+
+.members .title {
+  width: 350px;
+}
+
+.introduce {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 72px 0 45px;
+  font-family: "yasasisa";
+  color: #2e5077ff;
+}
+
+.person img {
+  width: 60%;
+  height: 70%;
+}
+
+.person {
+  margin: 4px 50px;
+  padding-bottom: 10px;
+}
+
+.face {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #2e5077ff;
+  margin: 15px;
+}
+
+.face img {
+  padding: 20px;
+}
+
+.script p {
+  font-size: 13px;
+  width: 120px;
+  height: 125px;
+  margin: 0 auto;
+}
+
+.contact .title {
+  width: 450px;
+}
+
+.contact-form {
+  font-family: "yasasisa";
+  color: #2e5077ff;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 0 50px;
+}
+
+.contact-form .item {
+  text-align: center;
+  margin: 50px 0;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-form .item .label {
+  display: block;
+  width: 170px;
+  margin: 10px auto;
+}
+
+input {
+  width: 50%;
+  border: 2px solid #2e5077ff;
+  background-color: #e8dcd0ff;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+textarea {
+  width: 50%;
+  height: 300px;
+  border: 2px solid #2e5077ff;
+  background-color: #e8dcd0ff;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 1em;
+  margin: 0 auto 50px;
+}
+
+button {
+  border: none;
+  outline: none;
+  margin: 0auto;
+  line-height: 30px;
+  width: 160px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+  background-color: #2e5077ff;
+  cursor: pointer;
+  border-radius: 10px;
+  box-sizing: content-box;
+  transition: 0.1s ease all;
+  font-family: "guzuri";
+  font-size: 25px;
+  padding: 10px;
+}
+
+.head {
+  height: 384px;
+  display: flex;
+}
+
+.activity-ttl {
+  font-family: "nishiki";
+  font-weight: 50;
+  font-size: 110px;
+  color: #2e5077ff;
+  top: 140px;
+  margin: auto;
+}
+
+.topbutton {
+  text-decoration: none;
+  color: #2e5077ff;
+  font-size: 27px;
+  font-family: "guzuri";
+  width: 130px;
+  height: 130px;
+  background-color: #f9d81dff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  transition: 0.5s;
+  position: fixed;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.topbutton:hover {
+  width: 150px;
+  height: 150px;
+  font-size: 30px;
+  background-color: #f9d81dff;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.page {
+  width: 100%;
+  background-image: url("img/bgimgkatsudo.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.page .topbutton {
+  width: 90px;
+  height: 90px;
+  line-height: 100px;
+  top: 39px;
+  left: 30px;
+  z-index: 3;
+}
+
+.page .topbutton:hover {
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+}
+
+.top-title {
+  font-family: "yasasisa";
+  color: #2e5077ff;
+  font-size: 38px;
+  border-left: 11px solid #f9d81dff;
+  margin: 0 0 30px 10px;
+  padding-left: 10px;
+}
+
+.sections {
+  color: #2e5077ff;
+  padding-bottom: 100px;
+}
+
+.detail-box,
+.detail-img {
+  width: 50%;
+}
+
+.detail-box {
+  text-align: center;
+  line-height: 2.4;
+}
+
+.detail-box p {
+  margin-bottom: 15px;
+  font-family: "yasasisa";
+}
+
+.detail {
+  margin-top: 60px;
+}
+
+.sections .flex {
+  align-items: center;
+}
+
+.link {
+  border: 1px solid #2e5077ff;
+  border-radius: 5px;
+  padding: 10px 30px;
+  color: #2e5077ff;
+  font-size: 26px;
+  text-decoration: none;
+  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.8s ease-out;
+  box-shadow: inset 0px 0px #2e5077ff, inset 0px 0px #2e5077ff;
+}
+
+.link:hover {
+  color: #fff;
+  border: 1px solid #2e5077ff;
+  border-radius: 5px;
+  background: #2e5077ff;
+  text-decoration: none;
+  padding: 10px 30px;
+  box-shadow: inset 150px 70px 0px 0px #2e5077ff,
+    inset -150px -70px 0px 0px #2e5077ff;
+}
+
+.fuwatAnime {
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+  -ms-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fuwatAnime;
+  -ms-animation-name: fuwatAnime;
+  animation-name: fuwatAnime;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fuwatAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+footer,
+.page footer {
+  padding: 15px;
+  font-family: "yasasisa";
+  color: #2e5077ff;
+  text-align: center;
+  background-image: url(img/footer.png);
+
+  background-size: cover;
+}
+
+@media screen and (max-width: 896px) {
+  body {
+    background: url(1x/bgimg.png) top / contain;
+  }
+
+  .nav-list {
+    font-size: 14px;
+    top: 0;
+  }
+
+  .logo-mini {
+    left: 80px;
+    font-size: 70px;
+  }
+
+  .scroll-img img {
+    width: 80px;
+  }
+
+  .top {
+    top: 18px;
+    width: 35%;
+  }
+
+  .bottom-left {
+    top: 470px;
+  }
+
+  .bottom-right {
+    top: 460px;
+  }
+
+  .left {
+    width: 5%;
+  }
+
+  .right {
+    width: 8%;
+  }
+
+  .person {
+    margin: 4px 20px;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+
+  .title,
+  .activities .title,
+  .contact .title {
+    width: 70%;
+  }
+
+  .activity-item {
+    margin-left: 10px;
+  }
+
+  .topbutton {
+    width: 90px;
+    height: 90px;
+    font-size: 19px;
+  }
+
+  .page .activity-ttl {
+    font-size: 90px;
+  }
+
+  .sevtions p {
+    font-size: 10px;
+  }
+
+  .link {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .page {
+    background: url(1x/bgimgkatsudo.png) top / contain;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: url(1x/bgimg.png) center / contain;
+  }
+
+  .global-nav {
+    display: none;
+  }
+  .logo-img {
+    margin: 160px auto 150px auto;
+  }
+  .logo-mini {
+    font-size: 30px;
+    left: 43%;
+    top: 80px;
+  }
+
+  .top {
+    width: 90%;
+  }
+
+  .left {
+    width: 10%;
+  }
+
+  .right {
+    width: 15%;
+  }
+
+  .scroll-img img {
+    width: 50px;
+  }
+
+  .scroll-txt {
+    font-size: 15px;
+  }
+
+  .mark {
+    width: 90px;
+  }
+
+  .about-txt {
+    font-size: 14px;
+  }
+
+  .actv-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .person {
+    margin: 4px 12px;
+  }
+
+  .face {
+    width: 90px;
+    height: 90px;
+  }
+
+  .contact-form {
+    font-size: 14px;
+  }
+
+  .topbutton {
+    width: 70px;
+    height: 70px;
+    font-size: 15px;
+    right: 20px;
+  }
+
+  .page {
+    background: url(1x/bgimgkatsudo.png) top / contain;
+  }
+
+  .page .activity-ttl {
+    font-size: 65px;
+  }
+
+  .top-title {
+    font-size: 20px;
+    border-left: 8px solid #f9d81dff;
+  }
+
+  .detail {
+    display: block;
+  }
+
+  .detail-img {
+    width: 100%;
+  }
+  .detail-box {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .detail-box p {
+    font-size: 12px;
+  }
+
+  .page .topbutton {
+    width: 50px;
+    height: 50px;
+    line-height: 52px;
+  }
+}

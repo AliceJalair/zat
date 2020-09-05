@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="newstyle.css" />
+    <link rel="stylesheet" href="https://tomap.co/ZP_reset.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shorcut icon" href="img/zatmark.png" />
+    <title>ZAT|活動紹介</title>
+  </head>
+
+  <body class="page">
+    <div class="head">
+      <a class="topbutton" href="newindex.html">TOP</a>
+      <p class="activity-ttl">活動紹介</p>
+    </div>
+
+    <div class="fuwat inner">
+      <div class="sections" id="section1">
+        <h2 class="top-title">第二回プチナッチェ</h2>
+
+        <div class="detail flex" id="detail1">
+          <img class="detail-img" src="img/petit2.jpg" alt="" width="559" />
+          <div class="detail-box">
+            <p>
+              前回に引き続きプチナッチェ実行委員とともに活動し、<br />
+              毎週こども会議に参加して企画を考えています。<br />
+              今回の開催は10月27日！ <br />
+              ハロウィンをコンセプトにしています。<br />
+              ZATは当日のおばけやしき企画の創作担当なので、<br />
+              現在一生懸命準備をしています！<br />
+              前回に引き続きポスターもZATお手製です！<br />
+              詳しくはプチナッチェのページをご覧ください。
+            </p>
+            <a
+              class="link"
+              href="https://kodomomarchefuchu.wixsite.com/petitnatche"
+              target="_blank"
+              >プチナッチェ</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="sections" id="section2">
+        <h2 class="top-title">アトリエ施設「ズッコロッカ」のお手伝い</h2>
+
+        <div class="detail flex" id="detail2">
+          <div class="detail-box">
+            <p>
+              ZATの立ち上げからみまもっている図工の先生、<br />
+              水Pが新たに始めたアトリエ、<br />
+              ズッコロッカのお部屋を掃除したり、<br />
+              内部装飾をしてオープンに向けて一緒に準備をしました。<br />
+              七夕に開催した7つ星マルシェでは、<br />
+              スタンプカードとスタンプ、企画の１つを担当しました。<br />
+              ズッコロッカの詳細は、リンク先のページをご覧ください。
+            </p>
+
+            <a
+              class="link"
+              href="http://zucco.mystrikingly.com/"
+              target="_blank"
+              >ズッコロッカ</a
+            >
+          </div>
+          <img class="detail-img" src="zukkorokka.JPG" alt="" width="559" />
+        </div>
+      </div>
+      <div class="sections" id="section3">
+        <h2 class="top-title">第一回プチナッチェ開催</h2>
+
+        <div class="detail flex" id="detail3">
+          <img class="detail-img" src="img/petit1.jpg" alt="" width="559" />
+          <div class="detail-box">
+            <p>
+              プチナッチェとは、こどもが主役の市や、市民、<br />
+              クリエイターが一丸となる、府中市のメインストリート<br />
+              で行われるイベントです。実行委員会とともに<br />
+              初回プチナッチェの開催に携わりました。<br />
+              プチナッチェという名前やテーマソングを考えたり、<br />
+              当日はワークショップ、自由にかける黒板、<br />
+              手作りのガチャガチャを企画して運営しました。<br />
+              darumareというお菓子屋さんとコラボして<br />
+              オリジナルパッケージも作成しました。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sections" id="section4">
+        <h2 class="top-title">府中市民協働まつりに参加</h2>
+
+        <div class="detail flex" id="detail4">
+          <div class="detail-box">
+            <p>
+              府中市民協働まつりではくじを作成し、<br />
+              周りのお店と連携したキャンペーンを行いました。<br />
+              当たりが出たらその店の商品と<br />交換してもらえるように考え、
+              当日は大好評でした！
+            </p>
+          </div>
+          <img class="detail-img" src="img/kyoudou.JPG" alt="" width="559" />
+        </div>
+      </div>
+      <div class="sections" id="section5">
+        <h1 class="top-title">リサイクル素材で看板作り</h1>
+
+        <div class="detail flex" id="detail5">
+          <img class="detail-img" src="img/flatstand.JPG" alt="" width="559" />
+          <div class="detail-box">
+            <p>
+              ZATとして、初めて学校を飛び出した活動です。<br />
+              使わなくなった資材をもらいリサイクルして、<br />
+              作品にして返すという活動で看板を作成。<br />
+              地元のカフェ、FLAT STANDに飾りました！
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".fuwat").css("visibility", "hidden");
+        $(window).scroll(function () {
+          var windowHeight = $(window).height(),
+            topWindow = $(window).scrollTop();
+          $(".fuwat").each(function () {
+            var objectPosition = $(this).offset().top;
+            if (topWindow > objectPosition - windowHeight + 10) {
+              $(this).addClass("fuwatAnime");
+            }
+          });
+        });
+      });
+    </script>
+
+    <footer>&copy;2019 ZukoArtTai</footer>
+  </body>
+</html>
